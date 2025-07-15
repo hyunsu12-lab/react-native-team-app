@@ -13,34 +13,25 @@ export default function Login() {
 
       <View style={{ marginTop: "auto", marginBottom: 130, width: "100%" }}>
         {/* 구글 로그인 버튼 */}
-        <TouchableOpacity style={styles.googleBtn}>
+        <TouchableOpacity style={styles.googleBtn} activeOpacity={0.8}>
           <View style={styles.btnInner}>
             <Image
-              source={{
-                uri: "https://img.icons8.com/?size=100&id=17949&format=png&color=000000",
-              }}
+              source={require("../../assets/images/google.png")}
               style={styles.icon}
             />
-            <Text style={styles.googleBtnText}>구글 계정으로 로그인</Text>
+            <Text style={styles.googleBtnText}>구글 계정으로 계속하기</Text>
           </View>
         </TouchableOpacity>
 
         {/* 카카오 로그인 버튼 */}
-        <TouchableOpacity style={styles.kakaoBtn}>
+        <TouchableOpacity style={styles.kakaoBtn} activeOpacity={0.8}>
           <View style={styles.btnInner}>
             <Image
-              source={{
-                uri: "https://www.svgrepo.com/show/368252/kakao.svg",
-              }}
+              source={require("../../assets/images/kakao_logo.png")}
               style={styles.icon}
             />
-            <Text style={styles.kakaoBtnText}>카카오톡으로 로그인</Text>
+            <Text style={styles.kakaoBtnText}>카카오톡으로 계속하기</Text>
           </View>
-        </TouchableOpacity>
-
-        {/* 회원가입 버튼 */}
-        <TouchableOpacity style={styles.signupBtn}>
-          <Text style={styles.signupBtnText}>회원가입</Text>
         </TouchableOpacity>
       </View>
     </View>

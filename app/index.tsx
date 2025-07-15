@@ -3,6 +3,8 @@
 import { useRouter } from "expo-router";
 import { useEffect } from "react";
 
+
+
 export default function Index() {
   const router = useRouter();
 
@@ -16,3 +18,5 @@ export default function Index() {
 
   return null;
 }
+
+export const serverIp = "http://localhost:3000";

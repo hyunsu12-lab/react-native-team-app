@@ -16,6 +16,7 @@
       }
     },
     "android": {
+      "package": "com.jangtang.eatdaapp",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
